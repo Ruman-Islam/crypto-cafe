@@ -12,8 +12,10 @@ const CoinDetails = () => {
         const url = `https://api.coingecko.com/api/v3/coins/${id}`
         fetch(url)
             .then(res => res.json())
-            .then(data => setCoin(data))
-        setIsLoading(false)
+            .then(data => {
+                setCoin(data)
+                setIsLoading(false)
+            })
     }, [id])
     return (
         <>
