@@ -44,9 +44,11 @@ const CoinDetails = () => {
                             <h1>Developer Score: {coin.developer_score}</h1>
                             <h1>Liquidity Score: {coin.liquidity_score}</h1>
                             <h1>Public Interest Score: {coin.public_interest_score}</h1>
-                            <button className='bg-slate-600 text-white px-8 py-1 mt-2 rounded-sm'>
-                                <Link to='/coins'>Back</Link>
-                            </button>
+                            <Link to='/coins'>
+                                <button className='bg-slate-600 text-white px-8 py-1 mt-2 rounded-sm'>
+                                    Back
+                                </button>
+                            </Link>
                         </div>
                         <div className='flex order-1 md:order-2 justify-center items-center'>
                             <img src={coin.image?.large} alt='coinImg' />
