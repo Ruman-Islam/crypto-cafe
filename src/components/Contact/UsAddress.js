@@ -3,7 +3,7 @@ import React from 'react';
 const UsAddress = () => {
     return (
         <div className='border p-8 bg-green-100 w-full'>
-            <div className='flex justify-between items-center'>
+            <div className='flex flex-col-reverse md:flex-row justify-between items-center'>
                 <div>
                     <h1>Street: 1203 SN Street</h1>
                     <h1>City: New York</h1>
@@ -11,7 +11,7 @@ const UsAddress = () => {
                     <h1>Email: contact.usa@cc.com</h1>
                 </div>
                 <div>
-                    <h1 className='text-2xl'>USA OFFICE</h1>
+                    <h1 className='text-2xl mb-4 md:mb-0'>USA OFFICE</h1>
                 </div>
             </div>
         </div>
