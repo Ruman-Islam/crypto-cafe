@@ -5,8 +5,10 @@ import Coins from './components/Coins/Coins';
 import BdAddress from './components/Contact/BdAddress';
 import Contact from './components/Contact/Contact';
 import UsAddress from './components/Contact/UsAddress';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Homepage from './components/Homepage/Homepage';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
           <Route path='us-address' element={<UsAddress />} />
         </Route>
         <Route path='/about' element={<About />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
